@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Student Task Manager</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <div class="container header-content">
+      <div>
+        <p class="eyebrow">Software Construction Assignment 2</p>
+        <h1>Student Task Manager</h1>
+        <p class="subtitle">Express Framework and RESTful Web Services</p>
+      </div>
+      <div class="api-badge">REST API Connected</div>
+    </div>
+  </header>
+
+  <main class="container layout">
+    <section class="card form-card">
+      <h2>Add a New Task</h2>
+      <p class="section-help">Create a task using the website form.</p>
+
+      <form id="task-form">
+        <label for="title">Task title</label>
+        <input id="title" name="title" type="text" required placeholder="Example: Complete video recording">
+
+        <label for="description">Description</label>
+        <textarea id="description" name="description" rows="4" placeholder="Add a short description"></textarea>
+
+        <label for="status">Status</label>
+        <select id="status" name="status">
+          <option value="pending">Pending</option>
+          <option value="in_progress">In progress</option>
+          <option value="completed">Completed</option>
+        </select>
+
+        <label for="dueDate">Due date</label>
+        <input id="dueDate" name="dueDate" type="date">
+
+        <button type="submit" class="primary-button">Add Task</button>
+      </form>
+
+      <p id="form-message" class="message" aria-live="polite"></p>
+    </section>
+
+    <section class="content-area">
+      <section class="card filter-card">
+        <div>
+          <h2>Search and Filter</h2>
+          <p class="section-help">Find tasks by keyword or status.</p>
+        </div>
+        <div class="filter-grid">
+          <input id="search" type="search" placeholder="Search title or description">
+          <select id="filter-status">
+            <option value="">All statuses</option>
+            <option value="pending">Pending</option>
+            <option value="in_progress">In progress</option>
+            <option value="completed">Completed</option>
+          </select>
+          <button id="refresh-button" class="secondary-button" type="button">Refresh</button>
+        </div>
+      </section>
+
+      <section class="card task-card">
+        <div class="task-heading">
+          <div>
+            <h2>Task List</h2>
+            <p class="section-help">Tasks are loaded from <code>GET /api/tasks</code>.</p>
+          </div>
+          <span id="task-count" class="count-badge">0 tasks</span>
+        </div>
+
+        <div id="task-list" class="task-list"></div>
+      </section>
+    </section>
+  </main>
+
+  <template id="task-template">
+    <article class="task-item">
+      <div class="task-details">
+        <div class="task-title-row">
+          <h3 class="task-title"></h3>
+          <span class="status-badge"></span>
+        </div>
+        <p class="task-description"></p>
+        <p class="task-meta"></p>
+      </div>
+      <div class="task-actions">
+        <select class="status-select" aria-label="Update status">
+          <option value="pending">Pending</option>
+          <option value="in_progress">In progress</option>
+          <option value="completed">Completed</option>
+        </select>
+        <button class="update-button" type="button">Update Status</button>
+        <button class="delete-button" type="button">Delete</button>
+      </div>
+    </article>
+  </template>
+
+  <script src="app.js"></script>
+</body>
+</html>

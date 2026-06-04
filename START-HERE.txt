@@ -1,0 +1,23 @@
+STUDENT TASK MANAGER - START HERE
+=================================
+
+1. Install Node.js LTS from the official Node.js download page.
+2. Extract this ZIP file.
+3. Open the extracted folder in VS Code.
+4. In VS Code, click Terminal > New Terminal.
+5. Run exactly these commands:
+
+   npm install
+   npm start
+
+6. Open this address in Chrome:
+
+   http://localhost:3000
+
+7. Read README.md for testing, GitHub upload commands, and troubleshooting.
+8. Read VIDEO_SCRIPT.md before recording the MP4 video.
+
+IMPORTANT:
+- Keep the terminal running while testing the website.
+- Press Ctrl+C only when you want to stop the server.
+- You do not need PHP, XAMPP, MySQL, Laravel, Postman, or a database.

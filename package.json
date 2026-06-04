@@ -1,0 +1,16 @@
+{
+  "name": "student-task-manager-express",
+  "version": "1.0.0",
+  "description": "Software Construction Assignment 2 - Express framework and RESTful web services",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node server.js"
+  },
+  "keywords": ["express", "rest-api", "assignment", "task-manager"],
+  "author": "Student",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^5.1.0"
+  }
+}

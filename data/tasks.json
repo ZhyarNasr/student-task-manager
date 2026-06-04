@@ -1,0 +1,26 @@
+[
+  {
+    "id": 1,
+    "title": "Prepare Software Construction video",
+    "description": "Explain Express framework setup and demonstrate REST APIs.",
+    "status": "completed",
+    "dueDate": "2026-06-04",
+    "createdAt": "2026-06-04T10:00:00.000Z"
+  },
+  {
+    "id": 2,
+    "title": "Upload assignment to E-Learning",
+    "description": "Submit the GitHub link and the MP4 video file.",
+    "status": "in_progress",
+    "dueDate": "2026-06-04",
+    "createdAt": "2026-06-04T10:05:00.000Z"
+  },
+  {
+    "id": 3,
+    "title": "Task created using REST API",
+    "description": "This task was created from PowerShell JSON data",
+    "status": "pending",
+    "dueDate": "2026-06-04",
+    "createdAt": "2026-06-04T18:49:49.851Z"
+  }
+]
